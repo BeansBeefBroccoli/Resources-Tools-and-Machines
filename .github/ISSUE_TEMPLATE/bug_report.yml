@@ -2,7 +2,7 @@ name: Bug Report
 description: File a Bug Report
 labels: [bug]
 assignees:
-  - "-----" # Repo Owner
+  - "BeansBeefBroccoli"
 body:
 - type: markdown
   attributes:
@@ -30,15 +30,30 @@ body:
     placeholder: "Type Here"
   validations:
     required: true
+- type: dropdown
+  attributes:
+    label: "Modloader"
+    description: "Select the Modloader you're using."
+    options:
+    - "Fabric"
+    - "Forge"
+  validations:
+    required: true
 - type: input
   attributes:
-    label: "----- Version" # Modloader
+    label: "Modloader Version"
     placeholder: "Type Here"
   validations:
     required: true
 - type: input
   attributes:
-    label: "----- Version" # Mod Name
+    label: "RTM Version"
+    placeholder: "Type Here"
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: "Architectury API Version"
     placeholder: "Type Here"
   validations:
     required: true
